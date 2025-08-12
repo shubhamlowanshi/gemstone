@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge"
 import { Star, ShoppingCart, Heart } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
+import burmse from '@/assets/burmse.png';
 
 const featuredGems = [
   {
@@ -31,7 +32,7 @@ const featuredGems = [
     name: "Burmese Ruby",
     price: 3200,
     originalPrice: 3800,
-    image: "/placeholder.svg?height=300&width=300",
+    image: burmse,
     rating: 4.7,
     carat: 2.2,
     type: "Ruby",
@@ -146,7 +147,7 @@ export default function HomePage() {
                 <CardContent className="p-0">
                   <div className="relative overflow-hidden rounded-t-lg">
                     <Image
-                      src={gem.image || "/placeholder.svg"}
+                      src={burmse || "/placeholder.svg"}
                       alt={gem.name}
                       width={300}
                       height={300}

@@ -13,6 +13,7 @@ import { Star, ShoppingCart, Heart, Filter, Grid, List } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import { useCart } from "@/contexts/cart-context"
+import burmse from '@/assets/burmse.png';
 
 const products = [
   {
@@ -48,7 +49,7 @@ const products = [
     name: "Burmese Ruby",
     price: 3200,
     originalPrice: 3800,
-    image: "/placeholder.svg?height=300&width=300",
+    image: burmse,
     rating: 4.7,
     carat: 2.2,
     type: "Ruby",
